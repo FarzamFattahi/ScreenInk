@@ -1,0 +1,19 @@
+SCREENINK - PORTABLE WINDOWS EDITION
+
+1. Keep all files in this folder together.
+2. Double-click "Start ScreenInk.bat".
+3. Press F8 to draw on the screen. Press F8 again to return.
+
+ScreenInk starts in the background. Its icon appears in the system tray
+(you may need to open the tray's hidden-icons arrow).
+Right-click that icon and choose Exit before unplugging your USB drive.
+
+Copy this whole folder to a USB drive or another Windows 10/11 PC.
+No installation, internet connection, or administrator access is normally
+needed. If using the ZIP, extract the entire ZIP before launching.
+Do not run two copies at once: only one app can register the F8 shortcut.
+School or work security policies may block PowerShell; consult your IT team.
+
+Drawings and undo history last only until you exit the application.
+Use Save PNG to keep your annotated screenshots permanently.
+See README.md for all tools and shortcuts.

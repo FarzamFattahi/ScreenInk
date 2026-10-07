@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScreenInk Whiteboard</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: #fff; color: #192133; font-family: "Segoe UI", sans-serif; }
+  main { padding: 24px; max-width: 640px; margin: 12vh auto; }
+  h1 { font-size: 32px; }
+  p { line-height: 1.7; }
+  button { font: inherit; padding: 12px 20px; border: 0; border-radius: 8px; background: #192133; color: white; cursor: pointer; }
+  button:focus-visible { outline: 3px solid #73a0ff; outline-offset: 4px; }
+</style>
+<main id="help">
+  <h1>Your blank teaching canvas</h1>
+  <p>Start ScreenInk first. Press <strong>F11</strong> to make this browser page full screen, hide these instructions, then press <strong>F8</strong> to draw. Press F8 or Escape to return; F11 leaves browser full screen.</p>
+  <p>This page works offline and makes no network requests. ScreenInk captures all connected monitors, so prepare the other screens before recording or sharing.</p>
+  <button type="button" onclick="document.getElementById('help').hidden=true">Hide instructions and use whiteboard</button>
+</main>
+</html>

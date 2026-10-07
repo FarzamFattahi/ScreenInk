@@ -1,0 +1,7 @@
+dist/
+verification/
+demo*-frames/
+demo*-error.log
+demo-error.log
+*.tmp
+__pycache__/

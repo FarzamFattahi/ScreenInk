@@ -1,0 +1,20 @@
+name: Verify ScreenInk
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  self-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run canvas, toolbar, shortcut, and history checks
+        shell: powershell
+        run: powershell.exe -STA -NoProfile -ExecutionPolicy Bypass -File .\ScreenInk.ps1 -SelfTest -TestArtifactsPath .\verification
+      - name: Preserve generated verification images
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenink-verification
+          path: verification/*.png

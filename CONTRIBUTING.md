@@ -18,4 +18,4 @@ Verify the actual tray/F8 lifecycle on a Windows desktop when it is affected. Us
 
 Describe the user-visible problem, the resulting behavior, and how you verified it. Add meaningful regression coverage when changing drawing behavior. For device reports, include your Windows version and mouse/touchpad/touchscreen/stylus model, but omit serial numbers and private screenshots.
 
-The demo is a scripted replay of actual canvas mouse handlers on a generated fraction lesson. Rebuild it with `tools/Record-Demo.ps1` and `tools/Encode-Demo.py` (requires Pillow). The banner source is in `docs/assets/banner.svg` and `banner.html`; `tools/Render-Banner.cjs` exports the HTML using Playwright and Chrome.
+The demo is a scripted replay of actual canvas mouse handlers on a generated fraction lesson. Rebuild it with `tools/Record-Demo.ps1` and `tools/Encode-Demo.py` (requires Pillow). The banner in `docs/assets/banner.png` was generated with OpenAI's built-in image-generation tool; its prompt and provenance are recorded in `docs/assets/BANNER.md`. It is conceptual artwork, while the GIF demonstrates the real drawing code.

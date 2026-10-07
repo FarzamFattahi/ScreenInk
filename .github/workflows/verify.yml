@@ -9,12 +9,12 @@ jobs:
   self-test:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
       - name: Run canvas, toolbar, shortcut, and history checks
         shell: powershell
         run: powershell.exe -STA -NoProfile -ExecutionPolicy Bypass -File .\ScreenInk.ps1 -SelfTest -TestArtifactsPath .\verification
       - name: Preserve generated verification images
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: screenink-verification
           path: verification/*.png
